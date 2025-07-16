@@ -1,0 +1,165 @@
+// Data from the user's provided HTML
+export const aiData = {
+    roles: [
+        { name: 'Machine Learning Engineer', focus: 'Designing & deploying AI models', responsibilities: 'Optimizing algorithms, deploying models, managing data pipelines, statistical analysis.', skills: 'ML platforms (Azure, AWS), Python, R, C++, statistics, data modeling.' },
+        { name: 'NLP Engineer', focus: 'Understanding human language', responsibilities: 'Developing NLP algorithms, training models with text data, conducting experiments.', skills: 'NLP algorithms, data preprocessing, machine learning, relevant certifications.' },
+        { name: 'AI Ethics Consultant', focus: 'Ensuring ethical AI', responsibilities: 'Conducting ethical impact assessments, advising on compliance, developing ethical guidelines.', skills: 'AI/ML knowledge, ethics, philosophy, analytical thinking, communication.' },
+        { name: 'AI Research Scientist', focus: 'Advancing AI capabilities', responsibilities: 'Developing new algorithms/models, designing experiments, publishing findings.', skills: 'Ph.D. (Computer Science, Data Science, Math), research methodology.' },
+        { name: 'AI Product Manager', focus: 'Overseeing AI product lifecycle', responsibilities: 'Defining product vision/strategy, market research, prioritizing features.', skills: 'AI/ML understanding, project management, leadership, data analysis, UX design.' },
+        { name: 'AI Engineer', focus: 'Developing & training AI algorithms', responsibilities: 'Pulling data, creating/testing ML models, implementing AI applications via APIs/code.', skills: 'Software development, programming, data science, data engineering.' },
+        { name: 'AI Data Engineer', focus: 'Building data pipelines for AI', responsibilities: 'Building/maintaining data pipelines, managing data architectures, ensuring data quality.', skills: 'Data pipelines (ETL), AI/ML frameworks, Python, SQL, NoSQL, cloud infrastructure.' },
+        { name: 'AI Trainer', focus: 'Refining AI interpretation', responsibilities: 'Cleaning/organizing data, annotating data, shaping conversational flows, integrating feedback.', skills: 'Programming basics (Python, SQL), data management, analytical thinking.' },
+        { name: 'Chatbot Developer', focus: 'Crafting conversational AI', responsibilities: 'Designing interfaces, integrating with systems, improving understanding, optimizing performance.', skills: 'Chatbot tools (Dialogflow, Rasa), Python, Node.js, NLP/ML basics.' },
+        { name: 'AI Solutions Architect', focus: 'Designing scalable AI/ML systems', responsibilities: 'Designing end-to-end solutions, implementing models, creating NLP architectures, technical leadership.', skills: 'ML/Deep Learning, NLP, Generative AI, cloud platforms (AWS, GCP, Azure).' },
+        { name: 'AI Consultant', focus: 'Guiding AI integration', responsibilities: 'Identifying AI opportunities, designing/implementing models, training employees, providing support.', skills: 'Python, R, SQL, ML algorithms, data analysis, strong communication.' },
+    ],
+    companies: [
+         { name: 'OpenAI', type: 'Tech Giant', focus: 'Conversational AI, NLP, Generative AI (GPT series)', example: 'ChatGPT, GPT-4o, versatile AI agents' },
+         { name: 'Google (DeepMind)', type: 'Tech Giant', focus: 'Foundational Research, AI-driven Healthcare, Multimodal AI (Gemini)', example: 'DeepMind\'s drug discovery, Google Cloud AI services' },
+         { name: 'NVIDIA', type: 'Tech Giant', focus: 'AI Hardware (GPUs), Software Infrastructure, Autonomous Systems', example: 'Industry-leading GPUs, Isaac GR00T-Dreams platform' },
+         { name: 'Microsoft AI', type: 'Tech Giant', focus: 'Embedded AI (Azure AI), AI Agents, Responsible AI', example: 'Microsoft 365 Copilot, Azure AI platform' },
+         { name: 'IBM Watson', type: 'Tech Giant', focus: 'Enterprise-grade AI, Data Analytics, Generative AI (Watson X)', example: 'Watson X Orchestrate, no-code AI customization' },
+         { name: 'Amazon AI (AWS)', type: 'Tech Giant', focus: 'AI/ML Tools, Cloud Computing (SageMaker)', example: 'Trainium AI chips, Amazon Q Developer' },
+         { name: 'Openxcell', type: 'Specialized AI Dev', focus: 'Custom AI Solutions (Healthcare, Retail), Generative AI', example: 'AI-driven financial tracking app with chatbot' },
+         { name: 'Azumo', type: 'Specialized AI Dev', focus: 'Intelligent AI Apps, LLM fine-tuning, NLP', example: 'HealthyScreen.ai for health monitoring' },
+         { name: '10Pearls', type: 'Specialized AI Dev', focus: 'Product Design, ML, AI, Voice Recognition, AR', example: 'Collaborations with Vodafone, Stride, Stripe' },
+         { name: 'Qubika', type: 'Specialized AI Dev', focus: 'Product Design, Data & AI, Generative AI, Computer Vision', example: 'AI-driven supply chain system for forecasting' },
+         { name: 'SoluLab', type: 'Specialized AI Dev', focus: 'AI Consulting, App/Chatbot/Agent Dev', example: 'ShopSmart (AI-driven retail app)' },
+         { name: 'STX Next', type: 'Specialized AI Dev', focus: 'AI & Data Solutions (Python), Cloud/DevOps', example: 'AI-based fraud detection system for fintech' }
+    ],
+    tools: [
+        { name: 'TensorFlow', type: 'Open-Source Framework', use: 'Large-scale AI applications, deep learning' },
+        { name: 'PyTorch', type: 'Open-Source Framework', use: 'Research and production, dynamic models' },
+        { name: 'Scikit-learn', type: 'Open-Source Framework', use: 'Structured data problems (regression, classification)' },
+        { name: 'Hugging Face', type: 'Open-Source Framework', use: 'Text-based AI applications (NLP)' },
+        { name: 'Google Vertex AI', type: 'Cloud Platform', use: 'Large-scale AI projects, scalable cloud AI services' },
+        { name: 'Amazon SageMaker', type: 'Cloud Platform', use: 'Enterprise AI development, deploying ML models at scale' },
+        { name: 'Microsoft Azure ML', type: 'Cloud Platform', use: 'Automated ML pipelines, responsible AI' },
+        { name: 'IBM Watson ML', type: 'Cloud Platform', use: 'Enterprise-grade AI projects, business AI solutions' },
+        { name: 'GitHub Copilot', type: 'Specialized Tool', use: 'Increased development speed, improved code quality' },
+        { name: 'Alteryx', type: 'Specialized Tool', use: 'Customer churn prediction, sales forecasting, fraud detection' },
+        { name: 'RapidMiner', type: 'Specialized Tool', use: 'Fraud detection, demand forecasting, predictive maintenance' },
+        { name: 'Tableau', type: 'Specialized Tool', use: 'Data visualization with embedded predictive capabilities' }
+    ],
+    affiliates: [
+        { name: 'Google (Google Cloud / Google AI / Gemini)', type: 'Major LLM Developer', focus: 'Multimodal AI, large-scale language models, AI infrastructure.', affiliateProgram: 'Google Cloud Partner Advantage Program (business-focused)', affiliatePotential: 'Less direct for individual AI tool links; more geared towards cloud solution providers.' },
+        { name: 'OpenAI', type: 'Major LLM Developer', focus: 'Pioneering generative AI, foundational models (GPT, DALL-E).', affiliateProgram: 'ChatGPT Plus Affiliate Program (Yes, for subscriptions)', affiliatePotential: 'High for consumer-facing AI mentors focusing on ChatGPT.' },
+        { name: 'Microsoft (Azure AI)', type: 'Major LLM Developer', focus: 'Integrating AI across products, enterprise-grade AI infrastructure.', affiliateProgram: 'Microsoft Partner Network (MPN) (business-focused)', affiliatePotential: 'More for enterprise solutions and cloud integration.' },
+        { name: 'Meta (Facebook AI)', type: 'Major LLM Developer', focus: 'Open-source AI research, foundation models (LLaMA).', affiliateProgram: 'No publicly advertised program for AI models.', affiliatePotential: 'Low for direct AI tool linking.' },
+        { name: 'Anthropic', type: 'Major LLM Developer', focus: 'AI safety, responsible AI, powerful general-purpose AI (Claude).', affiliateProgram: 'No publicly advertised program for Claude or API.', affiliatePotential: 'Low for direct AI tool linking.' },
+        { name: 'Jasper AI', type: 'Specialized AI Tool', focus: 'AI writing assistant for marketing, blogs, social media.', affiliateProgram: 'Yes, well-known affiliate program.', affiliatePotential: 'High for content creators, marketers, bloggers.' },
+        { name: 'Copy.ai', type: 'Specialized AI Tool', focus: 'AI-powered copywriting tool for marketing.', affiliateProgram: 'Yes, typically offers an affiliate program.', affiliatePotential: 'High for content creators and marketers.' },
+        { name: 'Leonardo.AI', type: 'Specialized AI Tool', focus: 'User-friendly platform for generating images from text.', affiliateProgram: 'Yes, has an affiliate program.', affiliatePotential: 'Medium to High for creators focusing on AI art.' },
+        { name: 'Descript', type: 'Specialized AI Tool', focus: 'AI-powered video/audio editing, transcription, podcasting.', affiliateProgram: 'Yes, has an affiliate program.', affiliatePotential: 'High for content creators, podcasters, video producers.' },
+        { name: 'RunwayML', type: 'Specialized AI Tool', focus: 'Suite of AI tools for video editing, image generation, 3D (text-to-video).', affiliateProgram: 'Yes, has an affiliate program.', affiliatePotential: 'High for video creators, artists, filmmakers.' },
+        { name: 'Synthesia', type: 'Specialized AI Tool', focus: 'AI video generation with realistic avatars.', affiliateProgram: 'Yes, typically offers an affiliate program.', affiliatePotential: 'High for businesses/individuals creating marketing, training videos.' },
+        { name: 'HeyGen', type: 'Specialized AI Tool', focus: 'AI video generation with realistic avatars.', affiliateProgram: 'Yes, typically offers an affiliate program.', affiliatePotential: 'High for businesses/individuals creating marketing, training videos.' },
+        { name: 'Zapier', type: 'Specialized AI Tool', focus: 'Connects apps and automates workflows, integrates LLMs.', affiliateProgram: 'Yes, has an affiliate program.', affiliatePotential: 'High for users teaching automation, productivity.' },
+        { name: 'n8n', type: 'Specialized AI Tool', focus: 'Connects apps and automates workflows, integrates LLMs.', affiliateProgram: 'Yes, has an affiliate program.', affiliatePotential: 'High for users teaching automation, productivity.' },
+    ],
+    caseStudies: [
+        { company: 'Netflix', industry: 'Media', valueDriver: 'Personalization', metric: '80% content watched influenced', description: 'AI recommendation system analyzes viewing history to personalize content suggestions, reducing churn.' },
+        { company: 'Amazon', industry: 'Retail', valueDriver: 'Personalization', metric: '35% revenue from recommendations', description: 'Engine analyzes Browse, purchase, and social data to suggest relevant products.' },
+        { company: 'Spotify', industry: 'Media', valueDriver: 'Personalization', metric: 'Content localization at scale', description: 'AI DJ interacts with users and AI voice cloning translates podcasts while retaining the original tone.' },
+        { company: 'Coca-Cola', industry: 'Retail', valueDriver: 'Personalization', metric: '2% sales increase', description: '"Share a Coke" campaign used AI to personalize bottles with names, boosting engagement.' },
+        { company: 'Stitch Fix', industry: 'Retail', valueDriver: 'Personalization', metric: '15% retention boost', description: 'AI-driven recommendations for clothing selections and virtual try-ons improve customer retention and order value.' },
+        { company: 'JP Morgan Chase', industry: 'Finance', valueDriver: 'Creative Automation', metric: '450% ad click-through increase', description: 'Partnered with Persado to use AI for copywriting, resulting in much higher ad performance.' },
+        { company: 'Heinz', industry: 'Retail', valueDriver: 'Creative Automation', metric: '800M+ earned impressions', description: 'Leveraged DALL-E to generate unique ketchup bottle designs for a viral marketing campaign.' },
+        { company: 'L\'Oréal', industry: 'Cosmetics', valueDriver: 'Creative Automation', metric: 'Weeks to days for concepts', description: 'Used Google\'s Imagen 3 to assist marketing teams with concept generation, storyboards, and packaging design.' },
+        { company: 'House of Growth', industry: 'Marketing', valueDriver: 'Operational Efficiency', metric: 'Doubled article volume', description: 'Automated content outlines and repurposing to double output without increasing team size.' },
+        { company: 'Siemens', industry: 'Manufacturing', valueDriver: 'Operational Efficiency', metric: '30% downtime reduction', description: 'AI-powered factories use predictive maintenance to forecast equipment failures and reduce downtime.' },
+        { company: 'JPMorgan', industry: 'Finance', valueDriver: 'Operational Efficiency', metric: 'Saved 360k hours annually', description: 'COIN system reviews legal documents in seconds, a task that previously took thousands of hours.' },
+        { company: 'U.S. Bank', industry: 'Finance', valueDriver: 'Operational Efficiency', metric: '260% conversion increase', description: 'Implemented predictive lead scoring with Salesforce Einstein for faster deal closures and higher conversion.' },
+        { company: 'inVia Robotics', industry: 'Logistics', valueDriver: 'Supply Chain', metric: '5x productivity improvement', description: 'Automates warehouse tasks with Goods-to-Person robot systems that pick and move items.' },
+        { company: 'DHL', industry: 'Logistics', valueDriver: 'Supply Chain', metric: 'Reduced transport costs', description: 'Leverages AI for route optimization, considering traffic, weather, and delivery priorities.' },
+        { company: 'Google DeepMind', industry: 'Healthcare', valueDriver: 'Innovation', metric: 'Accelerated drug discovery', description: 'AlphaFold revolutionized protein structure prediction, dramatically speeding up pharmaceutical research.' },
+        { company: 'L\'Oréal & IBM', industry: 'Cosmetics', valueDriver: 'Innovation', metric: 'Reduced material waste', description: 'Building the first AI model to advance sustainable cosmetics by analyzing formulation data.' },
+        { company: 'Blue River Tech', industry: 'Agriculture', valueDriver: 'Innovation', metric: '90% herbicide reduction', description: '\'See & Spray\' system uses computer vision to differentiate crops from weeds for precise spraying.' },
+        { company: 'CattleEye', industry: 'Agriculture', valueDriver: 'Innovation', metric: 'Improved disease detection', description: 'Image recognition AI provides real-time monitoring of livestock behavior and health.' },
+    ],
+    insights: [
+        { title: 'Ethical AI and Governance', content: 'As AI becomes more integrated, questions of data privacy, algorithmic bias, and transparency are gaining prominence. The demand for roles like AI Ethics Consultant and a focus on responsible AI principles highlight the importance of building trustworthy and fair AI systems.' },
+        { title: 'Workforce Transformation', content: 'AI automates tasks but also creates new roles and amplifies human productivity. Organizations must invest in reskilling their workforce for analytical, problem-solving, and AI-management roles to maximize benefits and ensure a smooth transition.' },
+        { title: 'The Hybrid Human-AI Model', content: 'The "Both/And Principle" will continue to guide development, emphasizing symbiotic human-AI collaboration. This is critical in fields like healthcare and customer service where human empathy and judgment remain indispensable.' },
+        { title: 'From Reactive to Proactive Operations', content: 'A profound shift is underway from reactive problem-solving to proactive operational management. Predictive analytics enables businesses to anticipate future events, optimize resources, and prevent costly disruptions, securing a significant competitive edge.' },
+        { title: 'Generative AI as a Creative Catalyst', content: 'Generative AI is democratizing content creation and accelerating creative cycles. It empowers companies to experiment more, localize content efficiently, and produce a higher volume of personalized assets, redefining creative workflows.' }
+    ],
+    llmExplanation: {
+        analogy: {
+            title: 'The Story of the Super-Chef: How AI "Thinks"',
+            paragraphs: [
+                "Imagine a chef, but not just any chef – a Super-Chef. This chef has never actually eaten a meal, never tasted a flavor, and doesn't understand \"delicious\" in the way we do. Yet, this Super-Chef can create the most incredible, perfectly tailored meals for anyone, every single time. How?",
+                "This Super-Chef spent their entire life in the world's largest kitchen, observing billions and billions of cooking sessions. They watched every ingredient being chopped, every pan sizzling, every dish being plated. They didn't memorize specific recipes for every dish, but they learned something far more powerful: the patterns of cooking.",
+                "Crucially, the Super-Chef also developed an amazing sense of \"contextual awareness.\" If someone asks for \"bank\" ingredients, the chef knows to pick from flour, eggs, and sugar if the last ingredient was \"bakery,\" but if the last ingredient was \"river,\" they'd be thinking of water, fish, and sand! They pay attention to all the surrounding ingredients to understand the true \"flavor\" of the request.",
+                "Now, when you, the customer, walk into the Super-Chef's kitchen and say, \"I want something quick and healthy for lunch, maybe with chicken,\" the chef doesn't \"think\" about chicken in the way you do. Instead, their brain, which is a \"Statistical Pattern-Matching Machine,\" instantly scans all the billions of cooking patterns it has learned. It figures out the most probable next ingredients that fit \"quick,\" \"healthy,\" \"lunch,\" and \"chicken.\" It then starts to \"cook\" your meal, ingredient by ingredient, alwayspicking the most statistically probable next ingredient until the dish is complete.",
+                "This Super-Chef, who doesn't truly \"taste\" or \"understand\" but perfectly processes patterns, is your Large Language Model."
+            ],
+            points: [
+                "They learned that flour and water often lead to dough.",
+                "They learned that salt usually follows pepper, but not always.",
+                "They learned that if someone uses garlic, onion, and tomato, they are highly likely to add basil next for an Italian dish.",
+                "They learned that if someone asks for \"breakfast,\" eggs and bacon are very common next ingredients."
+            ]
+        },
+        details: {
+            title: 'Large Language Models (LLMs): The Finer Details',
+            intro: "Large Language Models (LLMs) are the engines behind the incredibly intelligent AI experiences we interact with daily, like chatbots, content generators, and virtual assistants. They are a type of artificial intelligence designed to understand, generate, and manipulate human language. Here’s a closer look at their core components and how they operate:",
+            components: [
+                {
+                    title: "1. Tokenization: The AI's Alphabet",
+                    content: "Before an LLM can process any text, it first breaks down sentences into smaller units called tokens. A token isn't always a full word; it can be a common word, part of a word (like \"un-\" or \"-ing\"), a punctuation mark, or even numbers. This helps the model handle new or complex words and ensures efficient processing.",
+                    example: "The phrase \"unbelievable!\" might be broken into tokens like [\"un\", \"believe\", \"able\", \"!\"]."
+                },
+                {
+                    title: "2. Embeddings: Giving Words Meaning Through Numbers",
+                    content: "Each token is then converted into a numerical representation called an embedding (or vector). Imagine this as a unique list of numbers for every token in the model's vocabulary. These embeddings are not random; they are learned during the model's extensive training process. The Magic of Embeddings: Words with similar meanings or that frequently appear in similar contexts will have embeddings (numerical lists) that are \"close\" to each other in a multi-dimensional space. For instance, the embedding for \"king\" will be numerically closer to \"queen\" than to \"bicycle,\" reflecting their semantic relationship. This is how the AI begins to \"understand\" the meaning of words.",
+                },
+                {
+                    title: "3. The Transformer Architecture: The Brain's Connections",
+                    content: "Modern LLMs, including Google's Gemini and OpenAI's GPT series, are built upon a powerful neural network design called the Transformer architecture. The key innovation within the Transformer is the attention mechanism, particularly \"self-attention\".",
+                    pointsTitle: "Attention in Action:",
+                    points: [
+                        "Understand Context: Resolve ambiguities (like the two meanings of \"bank\").",
+                        "Connect Distant Ideas: Link a pronoun (\"it\") to the noun it refers to, even if they are far apart in a long text.",
+                        "Process Information in Parallel: Unlike older models, Transformers can process all words in a sequence simultaneously, making them incredibly fast for huge datasets."
+                    ],
+                    subContent: "When the LLM processes a sentence, for every word, it calculates how much \"attention\" it should pay to every other word in the sentence. For example, in \"The bank is near the river,\" when processing the first \"bank,\" the attention mechanism will heavily weight the word \"river\" as a strong clue to the meaning of \"bank\" in that context. This allows the model to:"
+                },
+                {
+                    title: "4. Pre-training: Learning from the Internet's Wisdom",
+                    content: "LLMs are \"pre-trained\" on colossal amounts of text data – literally trillions of words from books, articles, websites, conversations, and more. During this phase, the primary task is simple: predict the next token in a sequence. The Learning Loop: The model constantly guesses the next word, and if it's wrong, its internal parameters (including the values in the embeddings and the attention mechanism's weights) are subtly adjusted to reduce the error. Through this iterative process, the model learns the statistical patterns of human language, encompassing grammar, facts, common phrases, writing styles, and even subtle nuances of meaning.",
+                },
+                {
+                    title: "5. Generation: The Word-by-Word Symphony",
+                    content: "When you give an LLM a prompt, it's like setting the stage for its learned performance:",
+                    points: [
+                        "Contextual Understanding: Your prompt is tokenized, embedded, and processed by the attention mechanisms to form a rich, contextual understanding of your request.",
+                        "Probabilistic Prediction: The model then calculates the probability of every possible next token that could logically follow your input, based on its vast learned patterns.",
+                        "Sampling Strategy (Your Control): This is where settings like Temperature, Top P, and Top K come in. These settings influence which token is finally \"sampled\" and chosen.",
+                        "Iterative Process: The chosen token is added to the sequence, and the entire process repeats. The model continuously predicts the next token until it generates a special \"end-of-sequence\" token or reaches a predefined maximum length."
+                    ],
+                },
+                {
+                    title: "6. Multimodality and Tool Use: Beyond Just Text",
+                    content: "Modern LLMs like Gemini are often multimodal, meaning they are trained on and can process different types of data simultaneously (text, images, audio, video). This allows them to understand different inputs and generate diverse outputs. In essence, LLMs are not sentient beings, but incredibly sophisticated statistical pattern-matching machines. They have learned the intricate fabric of human language and information from immense datasets, enabling them to generate responses that often feel remarkably intelligent and human-like.",
+                }
+            ]
+        }
+    }
+};
+
+export const fullLLMExplanationText = [
+  aiData.llmExplanation.analogy.title,
+  ...aiData.llmExplanation.analogy.paragraphs,
+  ...aiData.llmExplanation.analogy.points,
+  aiData.llmExplanation.details.title,
+  aiData.llmExplanation.details.intro,
+  ...aiData.llmExplanation.details.components.flatMap(c => [
+    c.title,
+    c.content,
+    c.example,
+    c.subContent,
+    c.pointsTitle,
+    ...(c.points || [])
+  ])
+].filter(Boolean).join('\n\n');
