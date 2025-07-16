@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'AValue: The AI Value Creation Hub',
+  title: 'AiValue Hub',
   description: 'An interactive exploration of how Artificial Intelligence is creating tangible value across industries.',
 };
 

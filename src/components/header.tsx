@@ -51,7 +51,7 @@ export default function Header() {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="#hero" className="text-2xl font-bold font-headline text-foreground">
-            AValue
+            AiValue Hub
           </Link>
           <div className="hidden md:flex items-center space-x-2">
             {navItems.map((item) => (
