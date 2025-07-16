@@ -18,7 +18,7 @@ export default function Header() {
   const [activeSection, setActiveSection] = useState('');
 
   useEffect(() => {
-    const sections = navItems.map(item => document.querySelector(item.href));
+    const sections = navItems.map(item => document.querySelector(item.href)).filter(Boolean);
     
     const observer = new IntersectionObserver(
       (entries) => {

@@ -9,6 +9,7 @@ import AiNewsFeed from '@/components/ai-news-feed';
 import AiNewsFeedLoader from '@/components/ai-news-feed-loader';
 import OutlookSection from '@/components/outlook-section';
 import Footer from '@/components/footer';
+import LlmDetails from '@/components/llm-details';
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
           </div>
         </section>
         <OutlookSection />
+        <LlmDetails />
       </main>
       <Footer />
     </div>
