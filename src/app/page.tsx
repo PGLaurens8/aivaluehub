@@ -21,7 +21,6 @@ export default function Home() {
         <HeroSection />
         <ValueMatrix />
         <LlmExplanation />
-        <EcosystemExplorer />
         <ImpactCharts />
         <section id="news-updates" className="py-20 lg:py-24">
           <div className="container mx-auto px-4 max-w-6xl">
@@ -36,6 +35,7 @@ export default function Home() {
         </section>
         <OutlookSection />
         <LlmDetails />
+        <EcosystemExplorer />
       </main>
       <Footer />
     </div>
