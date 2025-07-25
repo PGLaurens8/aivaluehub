@@ -27,7 +27,7 @@ export default function Home() {
         <EverydayAi />
         <EcosystemExplorer />
         <OutlookSection />
-        <section id="news-updates" className="py-16 lg:py-20 bg-card">
+        <section id="news-updates" className="py-16 lg:py-20 bg-background">
           <div className="container mx-auto px-4 max-w-6xl">
             <h2 className="text-4xl md:text-5xl font-bold text-center font-headline text-foreground">AI News & Updates</h2>
             <p className="mt-4 text-lg text-center max-w-3xl mx-auto text-muted-foreground">
