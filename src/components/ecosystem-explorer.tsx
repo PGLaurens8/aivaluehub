@@ -71,8 +71,10 @@ export default function EcosystemExplorer() {
                                         <Card className="cursor-pointer h-full bg-card border-primary/20 shadow-lg hover:shadow-xl hover:shadow-primary/30 transition-shadow duration-300">
                                             <CardHeader>
                                                 <CardTitle className="font-headline">{tool.name}</CardTitle>
-                                                <CardDescription>
-                                                    <Badge variant={tool.type === 'Generative AI' ? 'default' : 'outline'}>{tool.type}</Badge>
+                                                <CardDescription asChild>
+                                                    <div>
+                                                        <Badge variant={tool.type === 'Generative AI' ? 'default' : 'outline'}>{tool.type}</Badge>
+                                                    </div>
                                                 </CardDescription>
                                             </CardHeader>
                                             <CardContent>
@@ -107,8 +109,10 @@ export default function EcosystemExplorer() {
                                         <Card className="cursor-pointer h-full bg-card border-primary/20 shadow-lg hover:shadow-xl hover:shadow-primary/30 transition-shadow duration-300">
                                             <CardHeader>
                                                 <CardTitle className="font-headline">{company.name}</CardTitle>
-                                                <CardDescription>
-                                                    <Badge variant={company.type === 'Tech Giant' ? 'default' : 'secondary'}>{company.type}</Badge>
+                                                <CardDescription asChild>
+                                                    <div>
+                                                        <Badge variant={company.type === 'Tech Giant' ? 'default' : 'secondary'}>{company.type}</Badge>
+                                                    </div>
                                                 </CardDescription>
                                             </CardHeader>
                                             <CardContent>
@@ -175,8 +179,10 @@ export default function EcosystemExplorer() {
                                         <Card className="cursor-pointer h-full bg-card border-primary/20 shadow-lg hover:shadow-xl hover:shadow-primary/30 transition-shadow duration-300">
                                             <CardHeader>
                                                 <CardTitle className="font-headline">{affiliate.name}</CardTitle>
-                                                <CardDescription>
-                                                    <Badge variant="secondary">{affiliate.type}</Badge>
+                                                <CardDescription asChild>
+                                                    <div>
+                                                        <Badge variant="secondary">{affiliate.type}</Badge>
+                                                    </div>
                                                 </CardDescription>
                                             </CardHeader>
                                             <CardContent>
