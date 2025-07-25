@@ -11,6 +11,8 @@ import OutlookSection from '@/components/outlook-section';
 import Footer from '@/components/footer';
 import LlmDetails from '@/components/llm-details';
 
+export const dynamic = 'force-dynamic';
+
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
