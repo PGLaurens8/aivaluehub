@@ -36,7 +36,7 @@ export default function LlmSummary() {
     };
 
     return (
-        <Card className="my-8 bg-primary/5 border-primary/20">
+        <Card className="my-8 bg-primary/5 border-primary/20 shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
             <CardHeader>
                 <CardTitle className="flex items-center gap-2 font-headline">
                     <Sparkles className="text-primary" />

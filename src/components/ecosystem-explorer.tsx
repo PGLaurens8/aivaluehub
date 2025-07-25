@@ -68,7 +68,7 @@ export default function EcosystemExplorer() {
                             {filteredTools.map(tool => (
                                  <Dialog key={tool.name}>
                                     <DialogTrigger asChild>
-                                        <Card className="cursor-pointer hover:border-primary transition-colors h-full bg-background">
+                                        <Card className="cursor-pointer h-full bg-background border-primary/20 shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
                                             <CardHeader>
                                                 <CardTitle className="font-headline">{tool.name}</CardTitle>
                                                 <CardDescription>
@@ -104,7 +104,7 @@ export default function EcosystemExplorer() {
                             {filteredCompanies.map(company => (
                                  <Dialog key={company.name}>
                                     <DialogTrigger asChild>
-                                        <Card className="cursor-pointer hover:border-primary transition-colors h-full bg-background">
+                                        <Card className="cursor-pointer h-full bg-background border-primary/20 shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
                                             <CardHeader>
                                                 <CardTitle className="font-headline">{company.name}</CardTitle>
                                                 <CardDescription>
@@ -136,7 +136,7 @@ export default function EcosystemExplorer() {
                             {aiData.roles.map((role) => (
                                 <Dialog key={role.name}>
                                     <DialogTrigger asChild>
-                                        <Card className="text-center cursor-pointer hover:border-primary hover:shadow-lg transition-all duration-300 h-full bg-background">
+                                        <Card className="text-center cursor-pointer h-full bg-background border-primary/20 shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
                                             <CardHeader>
                                                 <CardTitle className="text-base font-headline">{role.name}</CardTitle>
                                                 <CardDescription className="text-xs">{role.focus}</CardDescription>
@@ -172,7 +172,7 @@ export default function EcosystemExplorer() {
                             {filteredAffiliates.map(affiliate => (
                                 <Dialog key={affiliate.name}>
                                     <DialogTrigger asChild>
-                                        <Card className="cursor-pointer hover:border-primary transition-colors h-full bg-background">
+                                        <Card className="cursor-pointer h-full bg-background border-primary/20 shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
                                             <CardHeader>
                                                 <CardTitle className="font-headline">{affiliate.name}</CardTitle>
                                                 <CardDescription>

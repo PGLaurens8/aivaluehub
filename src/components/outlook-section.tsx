@@ -20,7 +20,7 @@ export default function OutlookSection() {
 
                 <Accordion type="single" collapsible className="w-full mt-12 space-y-4">
                     {aiData.insights.map((insight, index) => (
-                        <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg bg-card shadow-sm">
+                        <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg bg-card shadow-lg hover:shadow-primary/20 transition-all duration-300 border-primary/20">
                             <AccordionTrigger className="p-6 text-left hover:no-underline">
                                 <span className="flex items-center gap-4">
                                     <Lightbulb className="h-6 w-6 text-primary shrink-0"/>

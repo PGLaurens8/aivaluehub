@@ -80,7 +80,7 @@ export default function ValueMatrix() {
                     {caseStudies.length > 0 ? (
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 animate-in fade-in-50 duration-500">
                             {caseStudies.map(cs => (
-                                <Card key={cs.company} className="flex flex-col transform hover:-translate-y-1 transition-transform duration-300 bg-background">
+                                <Card key={cs.company} className="flex flex-col bg-background border-primary/20 shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
                                     <CardHeader>
                                         <CardTitle className="font-headline">{cs.company}</CardTitle>
                                         <CardDescription className="text-accent font-semibold pt-2">{cs.metric}</CardDescription>
