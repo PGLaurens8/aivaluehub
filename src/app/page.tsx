@@ -23,9 +23,9 @@ export default function Home() {
         <ValueMatrix />
         <ImpactCharts />
         <LlmExplanation />
-        <EcosystemExplorer />
-        <LlmDetails />
         <EverydayAi />
+        <EcosystemExplorer />
+        <OutlookSection />
         <section id="news-updates" className="py-20 lg:py-24">
           <div className="container mx-auto px-4 max-w-6xl">
             <h2 className="text-4xl md:text-5xl font-bold text-center font-headline text-foreground">AI News & Updates</h2>
@@ -37,7 +37,7 @@ export default function Home() {
             </Suspense>
           </div>
         </section>
-        <OutlookSection />
+        <LlmDetails />
       </main>
       <Footer />
     </div>

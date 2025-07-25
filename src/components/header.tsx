@@ -11,10 +11,10 @@ const navItems = [
   { href: '#value-matrix', label: 'Value Matrix' },
   { href: '#by-the-numbers', label: 'By The Numbers' },
   { href: '#understanding-llms', label: 'Understanding LLMs' },
-  { href: '#ecosystem', label: 'Ecosystem' },
   { href: '#everyday-ai', label: 'Everyday AI' },
-  { href: '#news-updates', label: 'News' },
+  { href: '#ecosystem', label: 'Ecosystem' },
   { href: '#outlook', label: 'Outlook' },
+  { href: '#news-updates', label: 'News' },
 ];
 
 export default function Header() {
@@ -55,7 +55,11 @@ export default function Header() {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="#hero" className="text-2xl font-bold font-headline text-foreground flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-primary">
+              <path d="M15 10H17V12H15V10Z" fill="currentColor"/>
+              <path d="M7 10H9V12H7V10Z" fill="currentColor"/>
+              <path fillRule="evenodd" clipRule="evenodd" d="M4.75 3C5.99264 3 7 4.00736 7 5.25V5.54991C8.04618 5.84524 9.213 6 10.5 6H13.5C14.787 6 15.9538 5.84524 17 5.54991V5.25C17 4.00736 18.0074 3 19.25 3C20.4926 3 21.5 4.00736 21.5 5.25V8.45C21.5 9.17604 21.1396 9.83597 20.5702 10.2792C21.7319 11.239 22.5 12.6042 22.5 14.15C22.5 16.7048 20.4547 18.8 17.9622 18.9813C17.4395 20.1873 16.2943 21 14.9 21H9.1C7.70569 21 6.56052 20.1873 6.03784 18.9813C3.54531 18.8 1.5 16.7048 1.5 14.15C1.5 12.6042 2.26808 11.239 3.42981 10.2792C2.86045 9.83597 2.5 9.17604 2.5 8.45V5.25C2.5 4.00736 3.50736 3 4.75 3ZM5 8V6H4V8H5ZM19 8V6H20V8H19ZM14 13V15H16V17H14V19H12V17H10V15H12V13H14Z" fill="currentColor"/>
+            </svg>
             AiValue Hub
           </Link>
           <div className="hidden md:flex items-center space-x-1">
