@@ -34,8 +34,8 @@ export default function Home() {
           </div>
         </section>
         <OutlookSection />
-        <LlmDetails />
         <EcosystemExplorer />
+        <LlmDetails />
       </main>
       <Footer />
     </div>

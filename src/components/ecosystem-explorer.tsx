@@ -47,11 +47,11 @@ export default function EcosystemExplorer() {
                     Discover the specialized talent, innovative companies, and powerful tools that form the foundation of the AI revolution.
                 </p>
 
-                <Tabs defaultValue="roles" className="mt-12 max-w-5xl mx-auto">
+                <Tabs defaultValue="tools" className="mt-12 max-w-5xl mx-auto">
                     <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 h-auto">
-                        <TabsTrigger value="roles">Roles</TabsTrigger>
-                        <TabsTrigger value="companies">Companies</TabsTrigger>
                         <TabsTrigger value="tools">Tools</TabsTrigger>
+                        <TabsTrigger value="companies">Companies</TabsTrigger>
+                        <TabsTrigger value="roles">Roles</TabsTrigger>
                         <TabsTrigger value="affiliates">Affiliate Programs</TabsTrigger>
                     </TabsList>
                     
