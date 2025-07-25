@@ -5,7 +5,7 @@ export default function LlmExplanation() {
     const { analogy } = aiData.llmExplanation;
 
     return (
-        <section id="understanding-llms" className="py-20 lg:py-24 bg-card">
+        <section id="understanding-llms" className="py-16 lg:py-20 bg-background">
             <div className="container mx-auto px-4 max-w-4xl">
                 <h2 className="text-4xl md:text-5xl font-bold text-center font-headline text-foreground">
                     Understanding Large Language Models

@@ -35,14 +35,14 @@ const COLORS = ['hsl(var(--chart-1))', 'hsl(var(--chart-2))', 'hsl(var(--chart-3
 
 export default function ImpactCharts() {
     return (
-        <section id="by-the-numbers" className="py-20 lg:py-24">
+        <section id="by-the-numbers" className="py-16 lg:py-20 bg-card">
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl md:text-5xl font-bold text-center font-headline text-foreground">AI Impact: By The Numbers</h2>
                 <p className="mt-4 text-lg text-center max-w-3xl mx-auto text-muted-foreground">
                     Visualizing the quantitative impact of AI reveals powerful trends and provides a clear, data-driven perspective.
                 </p>
                 <div className="mt-12 grid grid-cols-1 lg:grid-cols-5 gap-8">
-                    <Card className="lg:col-span-3 shadow-lg bg-card">
+                    <Card className="lg:col-span-3 shadow-lg bg-background">
                         <CardHeader>
                             <CardTitle className="font-headline text-center">Value Creation Metrics</CardTitle>
                         </CardHeader>
@@ -73,7 +73,7 @@ export default function ImpactCharts() {
                             </ChartContainer>
                         </CardContent>
                     </Card>
-                    <Card className="lg:col-span-2 shadow-lg bg-card">
+                    <Card className="lg:col-span-2 shadow-lg bg-background">
                          <CardHeader>
                             <CardTitle className="font-headline text-center">Focus of AI Applications</CardTitle>
                         </CardHeader>

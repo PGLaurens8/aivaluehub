@@ -4,58 +4,58 @@
 
 @layer base {
   :root {
-    --background: 220 13% 10%; /* Dark blue-grey */
+    --background: 220 13% 18%; /* Darker metal blue */
     --foreground: 210 20% 98%;
-    --card: 220 13% 14%;
+    --card: 220 13% 22%; /* Slightly lighter card background */
     --card-foreground: 210 20% 98%;
     --popover: 220 13% 14%;
     --popover-foreground: 210 20% 98%;
-    --primary: 210 100% 60%; /* A brighter, more modern blue */
+    --primary: 200 100% 40%; /* Darker, more neon blue */
     --primary-foreground: 210 40% 98%;
     --secondary: 220 10% 20%;
     --secondary-foreground: 210 20% 98%;
-    --muted: 220 10% 20%;
+    --muted: 220 10% 25%;
     --muted-foreground: 220 9% 65%;
-    --accent: 170 80% 45%;
+    --accent: 170 80% 35%; /* Darker, more neon turquoise/green */
     --accent-foreground: 210 40% 98%;
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 98%;
-    --border: 220 10% 25%;
+    --border: 220 10% 30%;
     --input: 220 10% 25%;
-    --ring: 210 100% 60%;
+    --ring: 200 100% 50%;
     --radius: 0.5rem;
-    --chart-1: 210 100% 60%;
-    --chart-2: 205 89% 55%;
-    --chart-3: 195 79% 50%;
+    --chart-1: 200 100% 50%;
+    --chart-2: 170 80% 45%;
+    --chart-3: 285 85% 60%;
     --chart-4: 255 80% 65%;
-    --chart-5: 285 85% 60%;
+    --chart-5: 45 90% 55%;
   }
 
   .dark {
-    --background: 220 13% 10%;
+    --background: 220 13% 18%;
     --foreground: 210 20% 98%;
-    --card: 220 13% 14%;
+    --card: 220 13% 22%;
     --card-foreground: 210 20% 98%;
     --popover: 220 13% 14%;
     --popover-foreground: 210 20% 98%;
-    --primary: 210 100% 60%;
+    --primary: 200 100% 40%;
     --primary-foreground: 210 40% 98%;
     --secondary: 220 10% 20%;
     --secondary-foreground: 210 20% 98%;
-    --muted: 220 10% 20%;
+    --muted: 220 10% 25%;
     --muted-foreground: 220 9% 65%;
-    --accent: 170 80% 45%;
+    --accent: 170 80% 35%;
     --accent-foreground: 210 40% 98%;
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 98%;
-    --border: 220 10% 25%;
+    --border: 220 10% 30%;
     --input: 220 10% 25%;
-    --ring: 210 100% 60%;
-    --chart-1: 210 100% 60%;
-    --chart-2: 205 89% 55%;
-    --chart-3: 195 79% 50%;
+    --ring: 200 100% 50%;
+    --chart-1: 200 100% 50%;
+    --chart-2: 170 80% 45%;
+    --chart-3: 285 85% 60%;
     --chart-4: 255 80% 65%;
-    --chart-5: 285 85% 60%;
+    --chart-5: 45 90% 55%;
   }
 }
 

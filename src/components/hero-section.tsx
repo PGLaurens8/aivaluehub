@@ -8,7 +8,7 @@ const stats = [
 
 export default function HeroSection() {
     return (
-        <section id="hero" className="py-20 lg:py-32 bg-card">
+        <section id="hero" className="py-20 lg:py-28 bg-card">
             <div className="container mx-auto px-4 text-center">
                 <h1 className="text-4xl md:text-6xl font-bold tracking-tight font-headline text-foreground">
                     The AI Revolution in Action
@@ -18,7 +18,7 @@ export default function HeroSection() {
                 </p>
                 <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                     {stats.map((stat, index) => (
-                        <Card key={index} className="text-center border-primary/20 shadow-lg hover:shadow-primary/20 transition-shadow duration-300 bg-background">
+                        <Card key={index} className="text-center border-primary/20 shadow-lg hover:shadow-xl hover:shadow-primary/30 transition-shadow duration-300 bg-background">
                             <CardHeader>
                                 <CardTitle className="text-5xl font-bold text-primary font-headline">
                                     {stat.value}

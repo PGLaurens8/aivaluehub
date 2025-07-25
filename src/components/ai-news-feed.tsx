@@ -7,7 +7,7 @@ export default async function AiNewsFeed() {
     return (
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
             {newsItems.length > 0 ? newsItems.map((item, index) => (
-                <Card key={index} className="border-primary/20 shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
+                <Card key={index} className="border-primary/20 shadow-lg hover:shadow-xl hover:shadow-primary/30 transition-shadow duration-300">
                     <CardHeader>
                         <CardTitle className="font-headline text-xl">{item.title}</CardTitle>
                     </CardHeader>
