@@ -99,9 +99,10 @@ export const aiData = {
         { title: 'Fitness and Meal Planner', content: 'Ask the AI to create a custom workout routine or weekly meal plan based on your goals, dietary restrictions, and available equipment. For example, "Create a 3-day/week workout plan for building muscle with just dumbbells."' }
     ],
     quotes: [
-        { text: "AI is a tool. The choice about how it gets deployed is ours.", author: "Oren Etzioni, CEO of AI2" },
         { text: "The real risk with AI isn't malice, but competence. A superintelligent AI will be extremely good at accomplishing its goals, and if those goals aren't aligned with ours, we have a problem.", author: "Stephen Hawking" },
+        { text: "Use AI as the most overqualified assistant that just loves to serve you", author: "PG Laurens" },
         { text: "Think of AI as a mirror that reflects our own values and biases. The challenge is to build mirrors that show us a better version of ourselves.", author: "Dr. Fei-Fei Li, Stanford Professor" },
+        { text: "AI is a tool. The choice about how it gets deployed is ours.", author: "Oren Etzioni, CEO of AI2" },
         { text: "I use ChatGPT to help me brainstorm and draft emails. It saves me hours each week and helps me sound more articulate.", author: "Sarah L., Marketing Manager" },
         { text: "AI will not replace you. A person using AI will replace you.", author: "Widely attributed to various sources" },
         { text: "Learning to code was daunting, but using an AI assistant to explain concepts and debug my code has been a game-changer for me.", author: "David C., Student" },
