@@ -171,11 +171,7 @@ export default function EcosystemExplorer() {
                                         <Card className="cursor-pointer h-full bg-card border-primary/20 shadow-lg hover:shadow-xl hover:shadow-primary/30 transition-shadow duration-300">
                                             <CardHeader>
                                                 <CardTitle className="font-headline">{affiliate.name}</CardTitle>
-                                                <CardDescription asChild>
-                                                    <div>
-                                                        <Badge variant="secondary">{affiliate.type}</Badge>
-                                                    </div>
-                                                </CardDescription>
+                                                <Badge variant="secondary">{affiliate.type}</Badge>
                                             </CardHeader>
                                             <CardContent>
                                                 <p className="text-sm text-muted-foreground mb-2"><strong className="text-foreground/80">Program:</strong> {affiliate.affiliateProgram}</p>
