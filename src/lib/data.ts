@@ -98,6 +98,14 @@ export const aiData = {
         { title: 'Creative Writing Partner', content: 'Suffering from writer\'s block? Give the AI a starting sentence or a basic plot point and ask it to "continue this story" or "suggest three different plot twists from here."' },
         { title: 'Fitness and Meal Planner', content: 'Ask the AI to create a custom workout routine or weekly meal plan based on your goals, dietary restrictions, and available equipment. For example, "Create a 3-day/week workout plan for building muscle with just dumbbells."' }
     ],
+    quotes: [
+        { text: "AI is a tool. The choice about how it gets deployed is ours.", author: "Oren Etzioni" },
+        { text: "The real risk with AI isn't malice, but competence. A superintelligent AI will be extremely good at accomplishing its goals, and if those goals aren't aligned with ours, we have a problem.", author: "Stephen Hawking" },
+        { text: "Think of AI as a mirror that reflects our own values and biases. The challenge is to build mirrors that show us a better version of ourselves.", author: "Dr. Fei-Fei Li" },
+        { text: "AI will not replace you. A person using AI will replace you.", author: "Unknown" },
+        { text: "The best way to predict the future is to invent it. AI gives us a new set of tools to do just that.", author: "Alan Kay" },
+        { text: "Instead of worrying about what AI can do, let's focus on what it can do for us.", author: "Sundar Pichai" }
+    ],
     llmExplanation: {
         analogy: {
             title: 'The Story of the Super-Chef: How AI "Thinks"',

@@ -4,11 +4,9 @@ export default function LlmDetails() {
     const { details } = aiData.llmExplanation;
 
     return (
-        <section id="llm-details" className="py-20 lg:py-24 bg-card border-b">
+        <section id="llm-details" className="py-20 lg:py-24">
             <div className="container mx-auto px-4 max-w-4xl">
-                <div className="text-center">
-                    <h2 className="text-4xl md:text-5xl font-bold text-center font-headline text-foreground">{details.title}</h2>
-                </div>
+                <h2 className="text-4xl md:text-5xl font-bold text-center font-headline text-foreground">{details.title}</h2>
                 <div className="prose-lg max-w-none text-foreground/80 mt-12">
                     <p className="mb-4 leading-relaxed text-center text-lg max-w-3xl mx-auto text-muted-foreground">{details.intro}</p>
                     

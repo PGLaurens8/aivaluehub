@@ -1,14 +1,6 @@
-<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M128 240C190.981 240 240 190.981 240 128C240 65.0193 190.981 16 128 16C65.0193 16 16 65.0193 16 128C16 190.981 65.0193 240 128 240Z" stroke="black" stroke-width="12" stroke-miterlimit="10"/>
-<path d="M184 104V88C184 79.1634 176.837 72 168 72H88C79.1634 72 72 79.1634 72 88V104" stroke="black" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M72 104H184V168C184 176.837 176.837 184 168 184H88C79.1634 184 72 176.837 72 168V104Z" stroke="black" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M128 72V60C128 55.5817 124.418 52 120 52H116C111.582 52 108 55.5817 108 60V72" stroke="black" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M114 40C114 42.2091 112.209 44 110 44C107.791 44 106 42.2091 106 40C106 37.7909 107.791 36 110 36C112.209 36 114 37.7909 114 40Z" fill="black"/>
-<path d="M100 116H101" stroke="black" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M156 116H157" stroke="black" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-<ellipse cx="98" cy="120" rx="14" ry="14" stroke="black" stroke-width="10"/>
-<ellipse cx="158" cy="120" rx="14" ry="14" stroke="black" stroke-width="10"/>
-<path d="M102 160C102 147.8 113.4 146 128 146C142.6 146 154 147.8 154 160" stroke="black" stroke-width="10" stroke-linecap="round"/>
-<ellipse cx="102" cy="122" rx="4" ry="4" fill="black"/>
-<ellipse cx="162" cy="122" rx="4" ry="4" fill="black"/>
+<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 10.5C7 10.2239 7.22386 10 7.5 10H8.5C8.77614 10 9 10.2239 9 10.5V11.5C9 11.7761 8.77614 12 8.5 12H7.5C7.22386 12 7 11.7761 7 11.5V10.5Z" fill="currentColor"/>
+<path d="M15 10.5C15 10.2239 15.2239 10 15.5 10H16.5C16.7761 10 17 10.2239 17 10.5V11.5C17 11.7761 16.7761 12 16.5 12H15.5C15.2239 12 15 11.7761 15 11.5V10.5Z" fill="currentColor"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3.27915 6.54911C3.88563 4.29524 5.86016 2.625 8.25 2.625H15.75C18.1398 2.625 20.1144 4.29524 20.7208 6.54911C21.9424 6.9442 22.875 8.05515 22.875 9.375V15.75C22.875 18.0683 21.0183 20.2543 18.7551 20.6121C18.4907 21.0569 18.064 21.375 17.566 21.375H6.43397C5.93602 21.375 5.50933 21.0569 5.24488 20.6121C2.98171 20.2543 1.125 18.0683 1.125 15.75V9.375C1.125 8.05515 2.05756 6.9442 3.27915 6.54911ZM8.25 4.125C6.56522 4.125 5.16339 5.29741 4.71791 6.89233C5.58625 6.52901 6.57462 6.375 7.59375 6.375H16.4062C17.4254 6.375 18.4137 6.52901 19.2821 6.89233C18.8366 5.29741 17.4348 4.125 15.75 4.125H8.25ZM2.625 9.375V15.75C2.625 17.3858 3.90345 18.7542 5.51475 18.9956C5.61741 18.2923 6.1837 17.625 6.93397 17.625H17.066C17.8163 17.625 18.3826 18.2923 18.4852 18.9956C20.0965 18.7542 21.375 17.3858 21.375 15.75V9.375H2.625Z" fill="currentColor"/>
+<path d="M9.5 14.5C9.5 14.2239 9.72386 14 10 14H14C14.2761 14 14.5 14.2239 14.5 14.5C14.5 15.3284 13.8284 16 13 16H11C10.1716 16 9.5 15.3284 9.5 14.5Z" fill="currentColor"/>
 </svg>

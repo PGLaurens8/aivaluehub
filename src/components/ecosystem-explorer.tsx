@@ -43,7 +43,7 @@ export default function EcosystemExplorer() {
     const filteredAffiliates = affiliateFilter === 'all' ? aiData.affiliates : aiData.affiliates.filter(a => a.type === affiliateFilter);
 
     return (
-        <section id="ecosystem" className="py-20 lg:py-24">
+        <section id="ecosystem" className="py-20 lg:py-24 bg-card">
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl md:text-5xl font-bold text-center font-headline text-foreground">Explore the AI Ecosystem</h2>
                 <p className="mt-4 text-lg text-center max-w-3xl mx-auto text-muted-foreground">
@@ -68,7 +68,7 @@ export default function EcosystemExplorer() {
                             {filteredTools.map(tool => (
                                  <Dialog key={tool.name}>
                                     <DialogTrigger asChild>
-                                        <Card className="cursor-pointer hover:border-primary transition-colors h-full">
+                                        <Card className="cursor-pointer hover:border-primary transition-colors h-full bg-background">
                                             <CardHeader>
                                                 <CardTitle className="font-headline">{tool.name}</CardTitle>
                                                 <CardDescription>
@@ -104,7 +104,7 @@ export default function EcosystemExplorer() {
                             {filteredCompanies.map(company => (
                                  <Dialog key={company.name}>
                                     <DialogTrigger asChild>
-                                        <Card className="cursor-pointer hover:border-primary transition-colors h-full">
+                                        <Card className="cursor-pointer hover:border-primary transition-colors h-full bg-background">
                                             <CardHeader>
                                                 <CardTitle className="font-headline">{company.name}</CardTitle>
                                                 <CardDescription>
@@ -136,7 +136,7 @@ export default function EcosystemExplorer() {
                             {aiData.roles.map((role) => (
                                 <Dialog key={role.name}>
                                     <DialogTrigger asChild>
-                                        <Card className="text-center cursor-pointer hover:border-primary hover:shadow-lg transition-all duration-300 h-full">
+                                        <Card className="text-center cursor-pointer hover:border-primary hover:shadow-lg transition-all duration-300 h-full bg-background">
                                             <CardHeader>
                                                 <CardTitle className="text-base font-headline">{role.name}</CardTitle>
                                                 <CardDescription className="text-xs">{role.focus}</CardDescription>
@@ -172,7 +172,7 @@ export default function EcosystemExplorer() {
                             {filteredAffiliates.map(affiliate => (
                                 <Dialog key={affiliate.name}>
                                     <DialogTrigger asChild>
-                                        <Card className="cursor-pointer hover:border-primary transition-colors h-full">
+                                        <Card className="cursor-pointer hover:border-primary transition-colors h-full bg-background">
                                             <CardHeader>
                                                 <CardTitle className="font-headline">{affiliate.name}</CardTitle>
                                                 <CardDescription>

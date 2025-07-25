@@ -11,6 +11,7 @@ import OutlookSection from '@/components/outlook-section';
 import Footer from '@/components/footer';
 import LlmDetails from '@/components/llm-details';
 import EverydayAi from '@/components/everyday-ai';
+import InspirationCarousel from '@/components/inspiration-carousel';
 
 export const dynamic = 'force-dynamic';
 
@@ -26,7 +27,7 @@ export default function Home() {
         <EverydayAi />
         <EcosystemExplorer />
         <OutlookSection />
-        <section id="news-updates" className="py-20 lg:py-24">
+        <section id="news-updates" className="py-20 lg:py-24 bg-card">
           <div className="container mx-auto px-4 max-w-6xl">
             <h2 className="text-4xl md:text-5xl font-bold text-center font-headline text-foreground">AI News & Updates</h2>
             <p className="mt-4 text-lg text-center max-w-3xl mx-auto text-muted-foreground">
@@ -38,6 +39,7 @@ export default function Home() {
           </div>
         </section>
         <LlmDetails />
+        <InspirationCarousel />
       </main>
       <Footer />
     </div>
