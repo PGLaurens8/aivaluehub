@@ -5,7 +5,7 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 import { aiData } from "@/lib/data";
-import { Lightbulb } from "lucide-react";
+import { BotMessageSquare } from "lucide-react";
 
 export default function OutlookSection() {
     return (
@@ -23,7 +23,7 @@ export default function OutlookSection() {
                         <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg bg-background shadow-lg hover:shadow-xl hover:shadow-primary/30 transition-all duration-300 border-primary/20">
                             <AccordionTrigger className="p-6 text-left hover:no-underline">
                                 <span className="flex items-center gap-4">
-                                    <Lightbulb className="h-6 w-6 text-primary shrink-0"/>
+                                    <BotMessageSquare className="h-6 w-6 text-primary shrink-0"/>
                                     <span className="font-headline text-lg">{insight.title}</span>
                                 </span>
                             </AccordionTrigger>
