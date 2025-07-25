@@ -28,6 +28,12 @@ export const aiData = {
          { name: 'STX Next', type: 'Specialized AI Dev', focus: 'AI & Data Solutions (Python), Cloud/DevOps', example: 'AI-based fraud detection system for fintech' }
     ],
     tools: [
+        { name: 'ChatGPT', type: 'Generative AI', use: 'Conversational AI for answering questions, writing, and brainstorming.' },
+        { name: 'Google Gemini', type: 'Generative AI', use: 'Multimodal conversational AI for text, image, and code generation.' },
+        { name: 'Microsoft Copilot', type: 'Generative AI', use: 'AI assistant integrated into Windows, Edge, and Microsoft 365.' },
+        { name: 'Anthropic Claude', type: 'Generative AI', use: 'Conversational AI focused on safety and helpfulness for complex tasks.' },
+        { name: 'Midjourney', type: 'Generative AI', use: 'High-quality image generation from text prompts via Discord.' },
+        { name: 'xAI Grok', type: 'Generative AI', use: 'Conversational AI with real-time information access from the X platform.' },
         { name: 'TensorFlow', type: 'Open-Source Framework', use: 'Large-scale AI applications, deep learning' },
         { name: 'PyTorch', type: 'Open-Source Framework', use: 'Research and production, dynamic models' },
         { name: 'Keras', type: 'Open-Source Framework', use: 'Rapid prototyping and user-friendly deep learning interface.' },
@@ -61,16 +67,16 @@ export const aiData = {
         { company: 'Netflix', industry: 'Media', valueDriver: 'Personalization', metric: '$1B+ annual value from retention', description: 'AI recommendation system analyzes viewing history to personalize content suggestions, reducing churn and saving over $1 billion annually.' },
         { company: 'Amazon', industry: 'Retail', valueDriver: 'Personalization', metric: '35% revenue from recommendations', description: 'Engine analyzes browse, purchase, and social data to suggest relevant products.' },
         { company: 'Spotify', industry: 'Media', valueDriver: 'Personalization', metric: '40M+ active users for AI DJ', description: 'AI DJ provides a personalized listening experience with dynamic commentary, driving significant user engagement.' },
-        { company: 'Mattel', industry: 'Retail', valueDriver: 'Creative Automation', metric: '60% faster idea generation', description: 'Used an internal generative AI tool to explore new concepts for toy cars, dramatically speeding up the creative process.' },
+        { company: 'Coca-Cola', industry: 'Retail', valueDriver: 'Creative Automation', metric: 'Launched in weeks, not months', description: 'Used generative AI to create initial branding, ad copy, and imagery for a new beverage, drastically cutting down creative timelines.' },
         { company: 'KLM Royal Dutch Airlines', industry: 'Travel', valueDriver: 'Creative Automation', metric: '40% higher email open rates', description: 'Used AI to generate personalized marketing copy, leading to more effective email campaigns and higher engagement.' },
         { company: 'L\'Oréal', industry: 'Cosmetics', valueDriver: 'Creative Automation', metric: 'Weeks to days for concepts', description: 'Used Google\'s Imagen 3 to assist marketing teams with concept generation, storyboards, and packaging design.' },
         { company: 'Wayfair', industry: 'Retail', valueDriver: 'Operational Efficiency', metric: '50% reduction in agent resolutions', description: 'AI-powered chatbot handles customer service inquiries, freeing up human agents for more complex issues.' },
         { company: 'Siemens', industry: 'Manufacturing', valueDriver: 'Operational Efficiency', metric: '30% downtime reduction', description: 'AI-powered factories use predictive maintenance to forecast equipment failures and reduce downtime.' },
         { company: 'Unilever', industry: 'Manufacturing', valueDriver: 'Operational Efficiency', metric: '€800M in savings', description: 'Created digital twin factories to optimize production processes and predict outcomes, resulting in massive cost savings.' },
-        { company: 'U.S. Bank', industry: 'Finance', valueDriver: 'Operational Efficiency', metric: '260% conversion increase', description: 'Implemented predictive lead scoring with Salesforce Einstein for faster deal closures and higher conversion.' },
+        { company: 'Morgan Stanley', industry: 'Finance', valueDriver: 'Operational Efficiency', metric: 'Minutes to seconds for queries', description: 'Deployed a custom AI assistant, trained on 100,000+ internal documents, to give financial advisors instant answers to complex questions.' },
         { company: 'inVia Robotics', industry: 'Logistics', valueDriver: 'Supply Chain', metric: '5x productivity improvement', description: 'Automates warehouse tasks with Goods-to-Person robot systems that pick and move items.' },
         { company: 'DHL', industry: 'Logistics', valueDriver: 'Supply Chain', metric: '15% efficiency gain in sorting', description: 'Uses AI-powered computer vision to scan and sort packages, improving speed and accuracy.' },
-        { company: 'Google DeepMind', industry: 'Healthcare', valueDriver: 'Innovation', metric: 'Identified 2.2M new materials', description: 'AI model called GNoME discovered millions of new stable crystal structures, accelerating materials science research.' },
+        { company: 'Google DeepMind', industry: 'Healthcare', valueDriver: 'Innovation', metric: 'Discovered 2.2M new materials', description: 'AI model GNoME discovered millions of stable crystal structures, accelerating materials science research for batteries and superconductors.' },
         { company: 'Genentech', industry: 'Healthcare', valueDriver: 'Innovation', metric: '25% faster clinical trial recruitment', description: 'Uses AI to analyze patient data and match individuals to suitable clinical trials more efficiently.' },
         { company: 'Blue River Tech', industry: 'Agriculture', valueDriver: 'Innovation', metric: '90% herbicide reduction', description: '\'See & Spray\' system uses computer vision to differentiate crops from weeds for precise spraying.' },
         { company: 'CattleEye', industry: 'Agriculture', valueDriver: 'Innovation', metric: 'Improved disease detection', description: 'Image recognition AI provides real-time monitoring of livestock behavior and health.' },
@@ -81,6 +87,16 @@ export const aiData = {
         { title: 'The Hybrid Human-AI Model', content: 'The "Both/And Principle" will continue to guide development, emphasizing symbiotic human-AI collaboration. This is critical in fields like healthcare and customer service where human empathy and judgment remain indispensable.' },
         { title: 'From Reactive to Proactive Operations', content: 'A profound shift is underway from reactive problem-solving to proactive operational management. Predictive analytics enables businesses to anticipate future events, optimize resources, and prevent costly disruptions, securing a significant competitive edge.' },
         { title: 'Generative AI as a Creative Catalyst', content: 'Generative AI is democratizing content creation and accelerating creative cycles. It empowers companies to experiment more, localize content efficiently, and produce a higher volume of personalized assets, redefining creative workflows.' }
+    ],
+    everydayAi: [
+        { title: 'Brainstorming Buddy', content: 'Stuck on a problem? Use a chatbot to explore different angles. Ask it to "act as a marketing expert" or "think like a contrarian" to get diverse perspectives on your ideas.' },
+        { title: 'Personalized Learning Tutor', content: 'Want to learn a new skill? Ask an AI to create a personalized learning plan. For example, "Create a 7-day plan for a beginner to learn Python, including daily topics and simple exercises."' },
+        { title: 'Travel Itinerary Planner', content: 'Planning a trip? Give an AI your destination, dates, and interests (e.g., "5-day trip to Tokyo, interested in food, history, and anime"). It can generate a day-by-day itinerary with suggestions.' },
+        { title: 'Email & Message Assistant', content: 'Struggling to find the right tone? Paste your draft and ask the AI to "make this email sound more professional" or "make this text message more friendly and casual."' },
+        { title: 'Code Debugger', content: 'If you code, you can paste a snippet of non-working code and ask the AI to "find the bug in this Python code" or "explain what this JavaScript function does."' },
+        { title: 'Summarize Anything', content: 'Have a long article or document to read? Copy the text (or provide a link) and ask the AI to "summarize this article into five key bullet points" to save time.' },
+        { title: 'Creative Writing Partner', content: 'Suffering from writer\'s block? Give the AI a starting sentence or a basic plot point and ask it to "continue this story" or "suggest three different plot twists from here."' },
+        { title: 'Fitness and Meal Planner', content: 'Ask the AI to create a custom workout routine or weekly meal plan based on your goals, dietary restrictions, and available equipment. For example, "Create a 3-day/week workout plan for building muscle with just dumbbells."' }
     ],
     llmExplanation: {
         analogy: {

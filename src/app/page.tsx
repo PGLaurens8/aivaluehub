@@ -10,6 +10,7 @@ import AiNewsFeedLoader from '@/components/ai-news-feed-loader';
 import OutlookSection from '@/components/outlook-section';
 import Footer from '@/components/footer';
 import LlmDetails from '@/components/llm-details';
+import EverydayAi from '@/components/everyday-ai';
 
 export const dynamic = 'force-dynamic';
 
@@ -20,8 +21,11 @@ export default function Home() {
       <main>
         <HeroSection />
         <ValueMatrix />
-        <LlmExplanation />
         <ImpactCharts />
+        <LlmExplanation />
+        <EcosystemExplorer />
+        <LlmDetails />
+        <EverydayAi />
         <section id="news-updates" className="py-20 lg:py-24">
           <div className="container mx-auto px-4 max-w-6xl">
             <h2 className="text-4xl md:text-5xl font-bold text-center font-headline text-foreground">AI News & Updates</h2>
@@ -34,8 +38,6 @@ export default function Home() {
           </div>
         </section>
         <OutlookSection />
-        <EcosystemExplorer />
-        <LlmDetails />
       </main>
       <Footer />
     </div>

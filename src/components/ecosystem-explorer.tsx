@@ -9,34 +9,37 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { cn } from '@/lib/utils';
 import { Badge } from './ui/badge';
 
-type FilterType = 'all' | 'Tech Giant' | 'Specialized AI Dev' | 'Open-Source Framework' | 'Cloud Platform' | 'Specialized Tool' | 'Major LLM Developer' | 'Specialized AI Tool';
+type CompanyFilterType = 'all' | 'Tech Giant' | 'Specialized AI Dev';
+type ToolFilterType = 'Generative AI' | 'Open-Source Framework' | 'Cloud Platform' | 'Specialized Tool';
+type AffiliateFilterType = 'all' | 'Major LLM Developer' | 'Specialized AI Tool';
+
 
 export default function EcosystemExplorer() {
-    const [companyFilter, setCompanyFilter] = useState<FilterType>('all');
-    const [toolFilter, setToolFilter] = useState<FilterType>('all');
-    const [affiliateFilter, setAffiliateFilter] = useState<FilterType>('all');
+    const [companyFilter, setCompanyFilter] = useState<CompanyFilterType>('all');
+    const [toolFilter, setToolFilter] = useState<ToolFilterType>('Generative AI');
+    const [affiliateFilter, setAffiliateFilter] = useState<AffiliateFilterType>('all');
 
-    const companyFilters: { label: string, value: FilterType }[] = [
+    const companyFilters: { label: string, value: CompanyFilterType }[] = [
         { label: 'All', value: 'all' },
         { label: 'Tech Giants', value: 'Tech Giant' },
         { label: 'Specialized Firms', value: 'Specialized AI Dev' },
     ];
 
-    const toolFilters: { label: string, value: FilterType }[] = [
-        { label: 'All', value: 'all' },
+    const toolFilters: { label: string, value: ToolFilterType }[] = [
+        { label: 'Generative AI', value: 'Generative AI' },
         { label: 'Frameworks', value: 'Open-Source Framework' },
         { label: 'Cloud Platforms', value: 'Cloud Platform' },
         { label: 'Specialized Tools', value: 'Specialized Tool' },
     ];
     
-    const affiliateFilters: { label: string, value: FilterType }[] = [
+    const affiliateFilters: { label: string, value: AffiliateFilterType }[] = [
         { label: 'All', value: 'all' },
         { label: 'Major LLM Developers', value: 'Major LLM Developer' },
         { label: 'Specialized AI Tools', value: 'Specialized AI Tool' },
     ];
 
     const filteredCompanies = companyFilter === 'all' ? aiData.companies : aiData.companies.filter(c => c.type === companyFilter);
-    const filteredTools = toolFilter === 'all' ? aiData.tools : aiData.tools.filter(t => t.type === toolFilter);
+    const filteredTools = aiData.tools.filter(t => t.type === toolFilter);
     const filteredAffiliates = affiliateFilter === 'all' ? aiData.affiliates : aiData.affiliates.filter(a => a.type === affiliateFilter);
 
     return (
@@ -55,26 +58,35 @@ export default function EcosystemExplorer() {
                         <TabsTrigger value="affiliates">Affiliate Programs</TabsTrigger>
                     </TabsList>
                     
-                    <TabsContent value="roles" className="mt-8">
-                        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                            {aiData.roles.map((role) => (
-                                <Dialog key={role.name}>
+                     <TabsContent value="tools" className="mt-8">
+                        <div className="flex justify-center flex-wrap mb-6 gap-2">
+                            {toolFilters.map(filter => (
+                                <Button key={filter.value} variant={toolFilter === filter.value ? "default" : "outline"} onClick={() => setToolFilter(filter.value)}>{filter.label}</Button>
+                            ))}
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            {filteredTools.map(tool => (
+                                 <Dialog key={tool.name}>
                                     <DialogTrigger asChild>
-                                        <Card className="text-center cursor-pointer hover:border-primary hover:shadow-lg transition-all duration-300 h-full">
+                                        <Card className="cursor-pointer hover:border-primary transition-colors h-full">
                                             <CardHeader>
-                                                <CardTitle className="text-base font-headline">{role.name}</CardTitle>
-                                                <CardDescription className="text-xs">{role.focus}</CardDescription>
+                                                <CardTitle className="font-headline">{tool.name}</CardTitle>
+                                                <CardDescription>
+                                                    <Badge variant={tool.type === 'Generative AI' ? 'default' : 'outline'}>{tool.type}</Badge>
+                                                </CardDescription>
                                             </CardHeader>
+                                            <CardContent>
+                                                <p className="text-sm text-muted-foreground"><strong className="text-foreground/80">Primary Use:</strong> {tool.use}</p>
+                                            </CardContent>
                                         </Card>
                                     </DialogTrigger>
                                     <DialogContent>
                                         <DialogHeader>
-                                            <DialogTitle className="font-headline text-2xl">{role.name}</DialogTitle>
-                                            <p className="text-accent font-semibold pt-1">{role.focus}</p>
+                                            <DialogTitle className="font-headline text-2xl">{tool.name}</DialogTitle>
+                                            <Badge variant={tool.type === 'Generative AI' ? 'default' : 'outline'} className="w-fit">{tool.type}</Badge>
                                         </DialogHeader>
-                                        <div className="space-y-2 text-sm">
-                                            <p><strong className="font-semibold text-foreground">Responsibilities:</strong> {role.responsibilities}</p>
-                                            <p><strong className="font-semibold text-foreground">Skills:</strong> {role.skills}</p>
+                                         <div className="space-y-2 text-sm">
+                                            <p><strong className="font-semibold text-foreground">Primary Use Case:</strong> {tool.use}</p>
                                         </div>
                                     </DialogContent>
                                 </Dialog>
@@ -119,35 +131,26 @@ export default function EcosystemExplorer() {
                         </div>
                     </TabsContent>
 
-                    <TabsContent value="tools" className="mt-8">
-                        <div className="flex justify-center flex-wrap mb-6 gap-2">
-                            {toolFilters.map(filter => (
-                                <Button key={filter.value} variant={toolFilter === filter.value ? "default" : "outline"} onClick={() => setToolFilter(filter.value)}>{filter.label}</Button>
-                            ))}
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            {filteredTools.map(tool => (
-                                 <Dialog key={tool.name}>
+                    <TabsContent value="roles" className="mt-8">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                            {aiData.roles.map((role) => (
+                                <Dialog key={role.name}>
                                     <DialogTrigger asChild>
-                                        <Card className="cursor-pointer hover:border-primary transition-colors h-full">
+                                        <Card className="text-center cursor-pointer hover:border-primary hover:shadow-lg transition-all duration-300 h-full">
                                             <CardHeader>
-                                                <CardTitle className="font-headline">{tool.name}</CardTitle>
-                                                <CardDescription>
-                                                    <Badge variant="outline">{tool.type}</Badge>
-                                                </CardDescription>
+                                                <CardTitle className="text-base font-headline">{role.name}</CardTitle>
+                                                <CardDescription className="text-xs">{role.focus}</CardDescription>
                                             </CardHeader>
-                                            <CardContent>
-                                                <p className="text-sm text-muted-foreground"><strong className="text-foreground/80">Primary Use:</strong> {tool.use}</p>
-                                            </CardContent>
                                         </Card>
                                     </DialogTrigger>
                                     <DialogContent>
                                         <DialogHeader>
-                                            <DialogTitle className="font-headline text-2xl">{tool.name}</DialogTitle>
-                                            <Badge variant="outline" className="w-fit">{tool.type}</Badge>
+                                            <DialogTitle className="font-headline text-2xl">{role.name}</DialogTitle>
+                                            <p className="text-accent font-semibold pt-1">{role.focus}</p>
                                         </DialogHeader>
-                                         <div className="space-y-2 text-sm">
-                                            <p><strong className="font-semibold text-foreground">Primary Use Case:</strong> {tool.use}</p>
+                                        <div className="space-y-2 text-sm">
+                                            <p><strong className="font-semibold text-foreground">Responsibilities:</strong> {role.responsibilities}</p>
+                                            <p><strong className="font-semibold text-foreground">Skills:</strong> {role.skills}</p>
                                         </div>
                                     </DialogContent>
                                 </Dialog>
