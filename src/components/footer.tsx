@@ -4,6 +4,7 @@ export default function Footer() {
             <div className="container mx-auto px-4 text-center">
                 <p>AiValue Hub</p>
                 <p className="text-sm mt-2 text-muted-foreground">Designed to make complex information accessible and engaging.</p>
+                <p className="text-sm mt-2 text-muted-foreground">Created by PG Laurens</p>
             </div>
         </footer>
     );
