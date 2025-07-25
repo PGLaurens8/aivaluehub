@@ -61,61 +61,21 @@ export default function Header() {
               xmlns="http://www.w3.org/2000/svg"
               className="h-8 w-8 text-primary"
             >
-              <path 
-                d="M18 9.5V5.5C18 4.39543 17.1046 3.5 16 3.5H8C6.89543 3.5 6 4.39543 6 5.5V9.5C6 10.6046 6.89543 11.5 8 11.5H9V13.5H7L4 16.5V11.5C4 10.3954 3.10457 9.5 2 9.5" 
-                stroke="currentColor" 
-                strokeWidth="1.5" 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                transform="translate(2, 2) scale(0.8)"
+             <path
+                d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"
+                fill="currentColor"
               />
-              <path 
-                d="M13 11.5H16C17.1046 11.5 18 10.6046 18 9.5V5.5C18 4.39543 17.1046 3.5 16 3.5H8C6.89543 3.5 6 4.39543 6 5.5V9.5C6 10.6046 6.89543 11.5 8 11.5H10" 
-                stroke="currentColor" 
-                strokeWidth="1.5" 
-                strokeLinecap="round" 
-                strokeLinejoin="round"
-                transform="translate(2, 2) scale(0.8)"
-              >
-              </path>
-              <path 
-                d="M20 9.5H22C23.1046 9.5 24 10.3954 24 11.5V16.5L21 13.5H19V11.5C19 10.3954 18.1046 9.5 17 9.5" 
-                stroke="currentColor" 
-                strokeWidth="1.5" 
-                strokeLinecap="round" 
-                strokeLinejoin="round"
-                transform="translate(-2, 2) scale(0.8)"
-              >
-              </path>
-              <path 
-                d="M12 21.5V18.5C12 17.3954 11.1046 16.5 10 16.5H8C6.89543 16.5 6 17.3954 6 18.5V21.5" 
-                stroke="currentColor" 
-                strokeWidth="1.5" 
-                strokeLinecap="round" 
-                strokeLinejoin="round"
-                transform="translate(4, -8) scale(0.8)"
-              >
-              </path>
-              <path 
-                d="M9.5 7.5V8.5" 
-                stroke="currentColor" 
-                strokeWidth="1.5" 
-                strokeLinecap="round"
-                transform="translate(2, 2) scale(0.8)"
+              <path
+                d="M12 6.5c-2.481 0-4.5 2.019-4.5 4.5v2c0 .276.224.5.5.5h8c.276 0 .5-.224.5-.5v-2c0-2.481-2.019-4.5-4.5-4.5zM8.5 13.5v-2c0-1.93 1.57-3.5 3.5-3.5s3.5 1.57 3.5 3.5v2h-7z"
+                fill="currentColor"
               />
-              <path 
-                d="M14.5 7.5V8.5" 
-                stroke="currentColor" 
-                strokeWidth="1.5" 
-                strokeLinecap="round"
-                transform="translate(2, 2) scale(0.8)"
+              <path
+                d="M9.5 15.5a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h5a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5h-5z"
+                fill="currentColor"
               />
-               <path 
-                d="M12 5.5V3.5" 
-                stroke="currentColor" 
-                strokeWidth="1.5" 
-                strokeLinecap="round"
-                transform="translate(2, 2) scale(0.8)"
+              <path
+                d="M10.5 9.5c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1zm3 0c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1z"
+                fill="currentColor"
               />
             </svg>
             AiValue Hub
